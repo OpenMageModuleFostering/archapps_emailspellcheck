@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/ArchApps_EmailSpellCheck",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Check & suggest correct email address when user misspells it in your web forms.",
+    "authors": [
+    {
+        "name": "ArchApps",
+        "email": "raivis@archapps.io"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

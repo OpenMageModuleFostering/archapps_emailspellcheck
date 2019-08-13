@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>ArchApps_EmailSpellCheck</name>
+    <version>0.1.1</version>
+    <stability>stable</stability>
+    <license uri="https://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Check &amp; suggest correct email address when user misspells it in your web forms.</summary>
+    <description>Email SpellCheck extension for Magento helps your customers to spot and correct any misspelled email addresses in your web forms - be it checkout, registration, newsletter or any other form. Right after user finishes typing an email, extension checks it for typos and suggests to correct it if finds any.</description>
+    <notes>Release of v0.1.1</notes>
+    <authors><author><name>ArchApps</name><user>ArchApps</user><email>raivis@archapps.io</email></author></authors>
+    <date>2016-04-06</date>
+    <time>09:32:33</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="ArchApps"><dir name="EmailSpellCheck"><dir><dir name="Helper"><file name="Data.php" hash="c64d4c406fc7812461924ff7501725b8"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f120395450864cffd7648fd0ca963825"/><file name="config.xml" hash="fb970f4d846f3272ff47f172836c33fd"/><file name="system.xml" hash="5c60ee63ae868cbb954d73cb97bc0ab3"/></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="ArchApps_EmailSpellCheck.xml" hash="888f626fa3835c6579be2d5a50e3cff3"/></dir></dir><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="archapps"><file name="emailspellcheck.xml" hash="45c5177d314662825a5075c3008d3431"/></dir></dir><dir name="template"><dir name="archapps"><dir name="emailspellcheck"><file name="email-spell-check.phtml" hash="5a42eb858bf1487d6ac8c088fbcbf94c"/></dir></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="archapps"><dir name="emailspellcheck"><file name="email-spell-check.phtml" hash="5c4a081829e816c4517eb0f885255ae7"/></dir></dir></dir><dir name="layout"><dir name="archapps"><file name="emailspellcheck.xml" hash="022f71e7728286b51ef8f15b24e5a1ad"/></dir></dir></dir></dir></dir></dir><dir name="locale"><dir name="en_US"><file name="ArchApps_EmailSpellCheck.csv" hash="097b1aa15b832ce7114d74cb397ce612"/></dir></dir></dir><dir name="js"><dir name="archapps"><dir name="emailspellcheck"><dir><dir name="css"><file name="emailspellcheck.css" hash="963a3a50b816b61bfefe9505e74bfbe1"/></dir></dir><file name="emailspellcheck.js" hash="d466b31a8b068ede1f4eba0975394450"/><file name="mailcheck-plugin.js" hash="97717ff8f16b797c38ab28ebef2dee8a"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

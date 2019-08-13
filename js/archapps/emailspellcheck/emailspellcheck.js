@@ -1,7 +1,6 @@
 /**
  * @category    ArchApps
  * @package     ArchApps_EmailSpellCheck
- * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 
@@ -25,6 +24,7 @@ ArchApps.EmailSpellCheck.prototype = {
      * Initialization function. Apply configs, events, observers
      *
      * @param {Object} config Object of options for the email spell check
+     * @return {void}
      */
     initialize: function (config) {
         if (typeof Mailcheck !== 'object') {
@@ -79,7 +79,9 @@ ArchApps.EmailSpellCheck.prototype = {
 
     /**
      * Run mail-check for given element, show or remove the suggestion
+     *
      * @param {Object} element DOM element of which email to be checked
+     * @return {void}
      */
     check: function (element) {
         Mailcheck.run({
@@ -98,8 +100,10 @@ ArchApps.EmailSpellCheck.prototype = {
 
     /**
      * Display the suggestion after the specified DOM input element
+     *
      * @param {Object} after DOM input element after which to add suggestion
      * @param {Object} suggestion Suggestion object containing correct email
+     * @return {void}
      */
     showSuggestion: function (after, suggestion) {
         var emailMarkup = this.suggestionEmailMarkup.evaluate({
@@ -110,8 +114,10 @@ ArchApps.EmailSpellCheck.prototype = {
             suggestionMarkup = this.suggestionMarkup.evaluate({
                 wrapClass: this.htmlWrapClass,
                 textClass: this.htmlTextClass,
+
                 text: this.suggestionText.replace(
-                    '%suggestion%', emailMarkup
+                    '%suggestion%',
+                    emailMarkup
                 )
             });
 
@@ -130,7 +136,9 @@ ArchApps.EmailSpellCheck.prototype = {
 
     /**
      * Remove the suggestion after the specified DOM input element
+     *
      * @param {Object} after DOM element of which to remove suggestion
+     * @return {void}
      */
     removeSuggestion: function (after) {
         var suggestionElement = after.next('.' + this.htmlWrapClass);
